@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import backrasm from "../assets/homeback.png";
 import rooms from "../assets/rooms.png";
+import faci from "../assets/facilities.png";
 
 export const Maincon = styled.div`
   text-align: center;
@@ -13,8 +14,8 @@ export const Maincon = styled.div`
       return `url(${backrasm})`;
     } else if (props.$rooms) {
       return `url(${rooms})`;
-    } else if (props.$tertiary) {
-      return 'url("path-to-tertiary-image.jpg")';
+    } else if (props.$facilities) {
+      return `url(${faci})`;
     } else {
       return 'url("path-to-default-image.jpg")'; // Default background image
     }
@@ -104,4 +105,75 @@ export const Bookh1 = styled.h1`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2.5px;
+`;
+export const MainWrapper = styled.div`
+  margin: 0 80px;
+`;
+export const Facdiv = styled.div`
+  margin-top: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 82px;
+`;
+export const Fach1 = styled.h1`
+  color: #14274a;
+  text-align: center;
+  font-family: Adobe Garamond Pro;
+  font-size: ${(props) => {
+    if (props.$fach1) {
+      return `60px`;
+    } else if (props.$gymh1) {
+      return `48px`;
+    } else if (props.$moto) {
+      return `30px`;
+    } else {
+      return "10px"; // Default background size
+    }
+  }};
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-bottom: ${(props) => {
+    if (props.$fach1) {
+      return `20px`;
+    } else if (props.$gymh1) {
+      return `0px`;
+    } else {
+      return "0px"; // Default background size
+    }
+  }};
+`;
+export const Facp = styled.p`
+  color: #14274a;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+`;
+export const Imgwrap = styled.div`
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 600px; */
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 186px;
+`;
+export const Gymdiv = styled.div`
+  width: 684px;
+  height: 75px;
+  flex-shrink: 0;
+  margin-top: -75px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
