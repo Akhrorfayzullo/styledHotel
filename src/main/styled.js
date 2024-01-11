@@ -126,21 +126,30 @@ export const Fach1 = styled.h1`
       return `60px`;
     } else if (props.$gymh1) {
       return `48px`;
+    } else if (props.$test) {
+      return `60px`;
+    } else if (props.$location) {
+      return `25px`;
     } else if (props.$moto) {
       return `30px`;
     } else {
-      return "10px"; // Default background size
+      return "60px"; // Default background size
     }
   }};
   font-style: normal;
-  font-weight: 700;
+  font-weight: ${(props) => (props.$location ? "400" : "700")};
+
   line-height: normal;
   letter-spacing: 3px;
   margin-bottom: ${(props) => {
     if (props.$fach1) {
       return `20px`;
+    } else if (props.$test) {
+      return `26px`;
     } else if (props.$gymh1) {
       return `0px`;
+    } else if (props.$location) {
+      return "25px";
     } else {
       return "0px"; // Default background size
     }
@@ -163,7 +172,7 @@ export const Imgwrap = styled.div`
   align-items: center;
   justify-content: center;
   /* margin: 0 600px; */
-  margin-left: 200px;
+  margin-left: ${(props) => (props.lastdiv ? "0" : "200px")};
   margin-right: 200px;
   margin-bottom: 186px;
 `;
@@ -176,4 +185,31 @@ export const Gymdiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+export const Footerwrap = styled.div`
+  background-color: #14274a;
+  height: 320px;
+  /* margin-left: 240px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 120px;
+`;
+export const Footerh1 = styled.h1`
+  margin-bottom: ${(props) => (props.$lux ? "22px" : "0px")};
+  color: #fff;
+`;
+export const Footerp = styled.p`
+  color: #fff;
+`;
+export const Socialdiv = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 20px;
+`;
+export const Input = styled.input`
+  width: 278px;
+  height: 50px;
 `;

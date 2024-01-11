@@ -23,6 +23,7 @@ import {
   Imgwrap,
   Gymdiv,
 } from "../main/styled";
+import Footer from "../footer/footer";
 import { Link } from "react-router-dom";
 function Facilities() {
   return (
@@ -160,12 +161,12 @@ function Facilities() {
           </Gymdiv>
         </Imgwrap>
 
-        <div className="testdiv">
-          <h1 className="testh1">Testimonials</h1>
+        <Imgwrap lastdiv={true}>
+          <Fach1 $test>Testimonials</Fach1>
           <Fach1 $moto>
             "Calm, Serene, Retro – What a way to relax and enjoy"
           </Fach1>
-          <h1 className="location"> Mr. and Mrs. Baxter, UK</h1>
+          <Fach1 $location={true}> Mr. and Mrs. Baxter, UK</Fach1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="121"
@@ -190,8 +191,9 @@ function Facilities() {
               fill="white"
             />
           </svg>
-        </div>
+        </Imgwrap>
       </MainWrapper>
+      <Footer />
     </div>
   );
 }
