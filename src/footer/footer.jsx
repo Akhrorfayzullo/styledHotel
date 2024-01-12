@@ -5,11 +5,44 @@ import {
   Footerp,
   Socialdiv,
   Input,
+  Imgwrap,
+  Fach1,
 } from "../main/styled";
 
 export default function Footer() {
   return (
     <div>
+      <Imgwrap lastdiv={true}>
+        <Fach1 $test>Testimonials</Fach1>
+        <Fach1 $moto>
+          "Calm, Serene, Retro – What a way to relax and enjoy"
+        </Fach1>
+        <Fach1 $location={true}> Mr. and Mrs. Baxter, UK</Fach1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="121"
+          height="50"
+          viewBox="0 0 121 50"
+          fill="none"
+        >
+          <path
+            d="M111 0H81C75.4772 0 71 4.47715 71 10V40C71 45.5228 75.4772 50 81 50H111C116.523 50 121 45.5228 121 40V10C121 4.47715 116.523 0 111 0Z"
+            fill="#E0B973"
+          />
+          <path
+            d="M102.34 24.6918L92.647 34.3848L89.76 31.4978L96.566 24.6918L89.76 17.8848L92.647 14.9978L102.34 24.6918Z"
+            fill="white"
+          />
+          <path
+            d="M10 50L40 50C45.5228 50 50 45.5228 50 40L50 10C50 4.47715 45.5228 0 40 0L10 0C4.47715 0 0 4.47715 0 10L0 40C0 45.5228 4.47715 50 10 50Z"
+            fill="#E0B973"
+          />
+          <path
+            d="M18.66 24.693L28.353 15L31.24 17.887L24.434 24.693L31.24 31.5L28.353 34.387L18.66 24.693Z"
+            fill="white"
+          />
+        </svg>
+      </Imgwrap>
       <Footerwrap>
         <div className="luxdiv">
           <Footerh1 $lux={true}>LUXuRY</Footerh1>

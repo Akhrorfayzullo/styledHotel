@@ -161,7 +161,7 @@ function Facilities() {
           </Gymdiv>
         </Imgwrap>
 
-        <Imgwrap lastdiv={true}>
+        {/* <Imgwrap lastdiv={true}>
           <Fach1 $test>Testimonials</Fach1>
           <Fach1 $moto>
             "Calm, Serene, Retro – What a way to relax and enjoy"
@@ -191,7 +191,7 @@ function Facilities() {
               fill="white"
             />
           </svg>
-        </Imgwrap>
+        </Imgwrap> */}
       </MainWrapper>
       <Footer />
     </div>

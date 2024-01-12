@@ -119,7 +119,8 @@ export const Facdiv = styled.div`
 `;
 export const Fach1 = styled.h1`
   color: #14274a;
-  text-align: center;
+  text-align: ${(props) =>
+    props.$test || props.$location ? "left" : "center"};
   font-family: Adobe Garamond Pro;
   font-size: ${(props) => {
     if (props.$fach1) {
@@ -139,7 +140,7 @@ export const Fach1 = styled.h1`
   font-style: normal;
   font-weight: ${(props) => (props.$location ? "400" : "700")};
 
-  line-height: normal;
+  line-height: ${(props) => (props.$location ? "40px" : "normal")};
   letter-spacing: 3px;
   margin-bottom: ${(props) => {
     if (props.$fach1) {
@@ -159,11 +160,12 @@ export const Facp = styled.p`
   color: #14274a;
   text-align: center;
   font-family: Montserrat;
-  font-size: 25px;
+  font-size: ${(props) => (props.$homep ? "36px" : "25px")};
   font-style: normal;
   font-weight: 400;
+  margin-top: ${(props) => (props.$homep ? "83px" : "0px")};
   line-height: normal;
-  margin-bottom: 10px;
+  margin-bottom: ${(props) => (props.$homep ? "93px" : "10px")};
 `;
 export const Imgwrap = styled.div`
   display: flex;
@@ -173,7 +175,7 @@ export const Imgwrap = styled.div`
   justify-content: center;
   /* margin: 0 600px; */
   margin-left: ${(props) => (props.lastdiv ? "0" : "200px")};
-  margin-right: 200px;
+  margin-right: ${(props) => (props.lastdiv ? "0px" : "200px")};
   margin-bottom: 186px;
 `;
 export const Gymdiv = styled.div`
@@ -212,4 +214,30 @@ export const Socialdiv = styled.div`
 export const Input = styled.input`
   width: 278px;
   height: 50px;
+`;
+export const HomeMainWrap = styled.div`
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: ${(props) => (props.$lastwrap ? "100px" : "0px")};
+  /* min-width: 1700px; */
+  /* margin: 0 auto; */
+  /* border: 1px solid black; */
+  padding: 50px 300px 50px;
+`;
+export const Wrap1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding-left: ${(props) => (props.wrap2 ? "0px" : "50px")};
+  border-left: ${(props) => (props.$wrap2 ? "none" : "2px solid #14274a")};
+`;
+export const Homebtn = styled.button`
+  width: 236px;
+  height: 63px;
+  background-color: #e0b973;
+  border-radius: 10px;
+  border: none;
+  font-size: 25px;
 `;
