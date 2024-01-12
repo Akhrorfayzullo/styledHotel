@@ -27,17 +27,19 @@ export const Maincon = styled.div`
   padding-left: 240px;
   padding-right: 150px;
 `;
-
+export const NavNames = styled.h1`
+  color: #fff;
+  margin: ${(props) => (props.$conh1 ? "100px 0 170px" : "0px")};
+  font-size: ${(props) => (props.$conh1 ? "80px" : "25px")};
+`;
 export const Navbar = styled.div`
-  //   border: 10px solid orange;
+  background-color: ${(props) => (props.$contact ? "#14274A" : "none")};
   width: 100%;
+  padding-left: ${(props) => (props.$contact ? "240px" : "0")};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //   padding-left: 240px;
-  padding-right: 150px;
-
-  /* margin: 0 50px; */
+  padding-right: ${(props) => (props.$contact ? "300px" : "150px")};
 `;
 export const Locations = styled.div`
   display: flex;
@@ -229,9 +231,10 @@ export const Wrap1 = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  margin: ${(props) => (props.$contact ? "260px 20vh 167px" : "0px")};
   justify-content: center;
-  padding-left: ${(props) => (props.wrap2 ? "0px" : "50px")};
-  border-left: ${(props) => (props.$wrap2 ? "none" : "2px solid #14274a")};
+  padding-left: ${(props) => (props.$wrap2 ? "50px" : "0px")};
+  border-left: ${(props) => (props.$wrap2 ? "2px solid #14274a" : "none")};
 `;
 export const Homebtn = styled.button`
   width: 236px;
@@ -240,4 +243,52 @@ export const Homebtn = styled.button`
   border-radius: 10px;
   border: none;
   font-size: 25px;
+  color: #fff;
+`;
+export const InfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 50px 10vw;
+  border-radius: 0px 0px 15px 15px;
+  border: 2px solid #14274a;
+`;
+
+export const RoomName = styled.h1`
+  color: #fff;
+  background-color: #14274a;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 141px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+export const Smallwrapper = styled.div`
+  display: flex;
+  /* border: 1px solid olive; */
+  align-items: center;
+  justify-content: space-around;
+  padding: ${(props) => (props.$outer ? "80px 0px" : "0px")};
+`;
+export const Loch1 = styled.h1`
+  color: #14274a;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: ${(props) => (props.$map ? "700" : "400")};
+  line-height: normal;
+`;
+export const Finaldiv = styled.div`
+  margin: 0px 20vh;
+  display: flex;
+  justify-content: space-between;
+`;
+export const Lastinput = styled.input`
+  width: 570px;
+  height: ${(props) => (props.$message ? "352px" : "78px")};
 `;

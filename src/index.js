@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./main/main";
 import Rooms from "./rooms/rooms";
 import Facilities from "./facilities/facilities";
+import Contact from "./contact/contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route path="/Home" element={<Main />} />
         <Route path="/Rooms" element={<Rooms />} />
         <Route path="/Facilities" element={<Facilities />} />
+        <Route path="/Contact-us" element={<Contact />}></Route>
       </Routes>
     </BrowserRouter>
     {/* <App /> */}

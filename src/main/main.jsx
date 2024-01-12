@@ -105,7 +105,7 @@ function Main() {
         All our room types are including complementary breakfast
       </Facp>
       <HomeMainWrap>
-        <Wrap1>
+        <Wrap1 $wrap2={true}>
           <Fach1 $test>Luxury redefined</Fach1>
           <Fach1 $location>
             Our rooms are designed to transport <br /> you into an environment
@@ -115,12 +115,12 @@ function Main() {
           <Homebtn>EXPLORE</Homebtn>
         </Wrap1>
 
-        <Wrap1 $wrap2={true}>
+        <Wrap1>
           <img src={img1} alt="Description of the image" />
         </Wrap1>
       </HomeMainWrap>
       <HomeMainWrap $lastwrap={true}>
-        <Wrap1>
+        <Wrap1 $wrap2={true}>
           <Fach1 $test>
             Leave your worries
             <br /> in the sand
@@ -136,7 +136,7 @@ function Main() {
           </Fach1>
           <Homebtn>EXPLORE</Homebtn>
         </Wrap1>
-        <Wrap1 $wrap2={true}>
+        <Wrap1>
           <img src={img2} alt="Description of the image" />
         </Wrap1>
       </HomeMainWrap>
