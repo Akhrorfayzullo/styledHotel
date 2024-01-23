@@ -67,7 +67,7 @@ function Rooms() {
             </text>
           </svg>
           <Locations>
-            <Link to="/home">
+            <Link to="/">
               <NavNames>Home</NavNames>
             </Link>
             <Link to="/Facilities">

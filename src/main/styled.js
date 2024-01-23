@@ -248,7 +248,7 @@ export const Homebtn = styled.button`
 export const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 50px 10vw;
+  margin: 50px 20vw;
   border-radius: 0px 0px 15px 15px;
   border: 2px solid #14274a;
 `;

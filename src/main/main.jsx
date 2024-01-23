@@ -21,6 +21,7 @@ import {
   Wrap1,
   Fach1,
   Homebtn,
+  NavNames,
 } from "./styled";
 import { Link } from "react-router-dom";
 function Main() {
@@ -65,17 +66,17 @@ function Main() {
             </text>
           </svg>
           <Locations>
-            <Link to="/home">
-              <h1 className="homeh1">Home</h1>
+            <Link to="/">
+              <NavNames>Home</NavNames>
             </Link>
             <Link to="/Facilities">
-              <h1 className="homeh1">Facilities</h1>
+              <NavNames>Facilities</NavNames>
             </Link>
             <Link to="/Rooms">
-              <h1 className="homeh1">Rooms</h1>
+              <NavNames>Rooms</NavNames>
             </Link>
             <Link to="/Contact-us">
-              <h1 className="homeh1">Contact-us</h1>
+              <NavNames>Contact-us</NavNames>
             </Link>
           </Locations>
         </Navbar>

@@ -15,7 +15,7 @@ root.render(
       {/* <h1>here is navbar</h1> */}
       {/* <Main /> */}
       <Routes>
-        <Route path="/Home" element={<Main />} />
+        <Route path="/" element={<Main />} />
         <Route path="/Rooms" element={<Rooms />} />
         <Route path="/Facilities" element={<Facilities />} />
         <Route path="/Contact-us" element={<Contact />}></Route>

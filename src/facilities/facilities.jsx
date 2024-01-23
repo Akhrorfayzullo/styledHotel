@@ -22,6 +22,7 @@ import {
   Facp,
   Imgwrap,
   Gymdiv,
+  NavNames,
 } from "../main/styled";
 import Footer from "../footer/footer";
 import { Link } from "react-router-dom";
@@ -68,16 +69,16 @@ function Facilities() {
           </svg>
           <Locations>
             <Link to="/home">
-              <h1 className="homeh1">Home</h1>
+              <NavNames>Home</NavNames>
             </Link>
             <Link to="/Facilities">
-              <h1 className="homeh1">Facilities</h1>
+              <NavNames>Facilities</NavNames>
             </Link>
             <Link to="/Rooms">
-              <h1 className="homeh1">Rooms</h1>
+              <NavNames>Rooms</NavNames>
             </Link>
             <Link to="/Contact-us">
-              <h1 className="homeh1">Contact-us</h1>
+              <NavNames>Contact-us</NavNames>
             </Link>
           </Locations>
         </Navbar>
